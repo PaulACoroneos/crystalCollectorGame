@@ -15,21 +15,66 @@
         <h1 id="header-style">Crystal Defenders</h1>
     </header>
 
-    <main class="container" role="main">
+    <main class="container border mt-4 mb-4" role="main">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 p-3">
                 <p> Welcome to Crystal Defenders! The rules of the game are as follows:</p>
                 <ul>
                     <li>The game will start with a randomly generated number</li>
                     <li>The four gems below have randomly assigned numbers that are not displayed.</li>
                     <li>Your objective is to select gems below. The hidden value of the gem will be subtracted from the total.</li>
-                    <li>You win if you EXACTLY</li>
+                    <li>You win if you EXACTLY match the total with your cystals. Good luck!</li>
                 </ul>
             </div>
         </div>
-    
-
     </main>
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-6 border">
+                <span>Number to guess:</span>
+                <div id="random-number"></div>
+            </div>
+            <div class="col-6 border">
+                <span>Wins:</span>
+                <div id="number-wins">0</div>
+                <span>Losses:</span>
+                <div id="number-losses">0</div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 mb-4">
+        <div class="row border">
+            <div class="col-3 border">
+                <div id="gem1-update"><img src="assets/images/gem1.png" alt="gem1"></div>
+                <span>Gem 1</span>
+            </div>
+            <div class="col-3 border">
+                <div id="gem2-update"><img  src="assets/images/gem2.png" alt="gem2"></div>
+                <span>Gem 2</span>
+            </div>
+            <div class="col-3 border">
+                <div id="gem3-update"><img src="assets/images/gem3.png" alt="gem3"></div>
+                <span>Gem 3</span>
+            </div>
+            <div class="col-3 border">
+                <div id="gem4-update"><img src="assets/images/gem4.png" alt="gem4"></div>
+                <span>Gem 4</span> 
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-12 border">
+                <span>Your total score is:</span>
+                <div id="current-score">0</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Load game-->
+    <script src="./game.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
