@@ -3,8 +3,26 @@ body,html {
 }
 #header-style {
     background-color:white;
-    
+    font-size:50px;
 }
 .container {
     background-color:white;
+}
+#rules {
+    font-size:24px;
+}
+#num-guess {
+    font-size:24px;
+}
+#total-score {
+    font-size:30px;
+}
+.gem-label {
+    font-size:26px;
+}
+#random-number {
+    font-size:60px;
+}
+#current-score {
+    font-size:60px;
 }

@@ -52,7 +52,7 @@ $(document).ready(function() {
         if(workingNumber == randomGeneratedNum) //did we win?
         {
             wins++;
-            alert("You win! The number to guess was indeed " + randomGeneratedNum);
+            alert("You win!");
             displayWins.text(wins); //update working value
             workingScore.text(0);
             generateNewGame();
@@ -60,7 +60,7 @@ $(document).ready(function() {
         else if (workingNumber > randomGeneratedNum )   //did we go too far?
         {
             losses++;   //too bad
-            alert("Sorry you lost. The number to guess was " + randomGeneratedNum+ ". Better luck next time!");
+            alert("Sorry you lost. Better luck next time!");
             displayLosses.text(losses); //update working value
             workingScore.text(0);
             generateNewGame();

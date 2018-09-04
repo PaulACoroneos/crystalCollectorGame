@@ -12,58 +12,64 @@
   </head>
   <body>
     <header>
-        <h1 id="header-style">Crystal Defenders</h1>
+        <h1 id="header-style" class="pl-2 pb-2">Crystal Defenders</h1>
     </header>
 
     <main class="container border mt-4 mb-4" role="main">
-        <div class="row">
+        <div class="row" id="rules">
             <div class="col-12 p-3">
                 <p> Welcome to Crystal Defenders! The rules of the game are as follows:</p>
                 <ul>
                     <li>The game will start with a randomly generated number</li>
                     <li>The four gems below have randomly assigned numbers that are not displayed.</li>
                     <li>Your objective is to select gems below. The hidden value of the gem will be subtracted from the total.</li>
-                    <li>You win if you EXACTLY match the total with your cystals. Good luck!</li>
+                    <li>You win if you EXACTLY match the total with your crystals. Good luck!</li>
                 </ul>
             </div>
         </div>
     </main>
     <div class="container mt-4 mb-4">
-        <div class="row">
-            <div class="col-6 border">
+        <div class="row" id="num-guess">
+            <div class="col-xs-12 col-md-6 border">
                 <span>Number to guess:</span>
                 <div id="random-number"></div>
             </div>
-            <div class="col-6 border">
-                <span>Wins:</span>
-                <div id="number-wins">0</div>
-                <span>Losses:</span>
-                <div id="number-losses">0</div>
+            <div class="col-xs-12 col-md-6 border">
+                <span>Wins:<div id="number-wins">0</div></span>
+                <span>Losses:<div id="number-losses">0</div></span>
+            </div>
+        </div>
+    </div>
+    <div class="container h-100">
+        <div class="row border pt-2 pb-2">
+            <div class="col-3 border-right ">
+                <div id="gem1-update">
+                    <img src="assets/images/gem1.png" alt="gem1">
+                    <span class="gem-label">Gem 1</span>
+                </div>
+            </div>
+            <div class="col-3 border-right">
+                <div id="gem2-update">
+                    <img src="assets/images/gem2.png" alt="gem2">
+                    <span class="gem-label">Gem 2</span>
+                </div>
+            </div>
+            <div class="col-3 border-right">
+                <div id="gem3-update">
+                    <img src="assets/images/gem3.png" alt="gem3">
+                    <span class="gem-label">Gem 3</span>
+                </div>
+            </div>
+            <div class="col-3">
+                <div id="gem4-update">
+                    <img src="assets/images/gem4.png" alt="gem4">
+                    <span class="gem-label">Gem 4</span> 
+                </div>
             </div>
         </div>
     </div>
     <div class="container mt-4 mb-4">
-        <div class="row border">
-            <div class="col-3 border">
-                <div id="gem1-update"><img src="assets/images/gem1.png" alt="gem1"></div>
-                <span>Gem 1</span>
-            </div>
-            <div class="col-3 border">
-                <div id="gem2-update"><img  src="assets/images/gem2.png" alt="gem2"></div>
-                <span>Gem 2</span>
-            </div>
-            <div class="col-3 border">
-                <div id="gem3-update"><img src="assets/images/gem3.png" alt="gem3"></div>
-                <span>Gem 3</span>
-            </div>
-            <div class="col-3 border">
-                <div id="gem4-update"><img src="assets/images/gem4.png" alt="gem4"></div>
-                <span>Gem 4</span> 
-            </div>
-        </div>
-    </div>
-    <div class="container mt-4 mb-4">
-        <div class="row">
+        <div class="row" id="total-score">
             <div class="col-12 border">
                 <span>Your total score is:</span>
                 <div id="current-score">0</div>
