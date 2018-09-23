@@ -1,5 +1,14 @@
 # crystalCollectorGame
 
+## Technologies Used
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* JQuery
+
+## Description
+
 This is a simple game based on HTML,CSS,Bootstrap, JS and JQuery. At load of the page a random number is generated.
 Four crystal buttons are generated with psuedo random values guaranteed to give the user at least a chance to win.
 The object of the game is to click the crystals until the user value equals the random number. The user number will
